@@ -1,0 +1,67 @@
+@import url("../styles/base/reset.css");
+@import url("../styles/base/base.css");
+@import url("../styles/homepage/banner.css");
+@import url("../styles/homepage/sobre.css");
+@import url("../styles/homepage/conteudo.css");
+@import url("../styles/homepage/curiosidades.css");
+@import url("../styles/homepage/contato.css");
+
+body {
+    background: #f2f3f8;
+
+}
+/* Estilos para todas as seções */
+section{
+  text-align: center;
+}
+
+#sobre, #curiosidades, #contato{
+  padding: 80px;
+}
+
+/* Estilos para parágrafos (p) */
+p {
+  font-weight: 300;
+  color: var(--color-navbar--preto);
+}
+
+/* Estilos para a classe "texto" */
+.texto {
+  padding: 15px 0 5px;
+  text-align: center;
+}
+
+/* Estilos para os títulos (h3) dentro da classe "texto" */
+.texto h3 {
+  font-weight: 400;
+  color: var(--color-navbar--preto);
+}
+
+
+
+/* Estilos para botões */
+.botao {
+  font-size: 1.5em;
+  color: var(--branco);
+  background: var(--color-link);
+  display: inline-block;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  margin-top: 20px;
+  text-decoration: none;
+  letter-spacing: 2px;
+  transition: .5s;
+}
+
+/* Estilos para botões quando o cursor do mouse passa por cima (hover) */
+.botao:hover,
+.botao:focus {
+  letter-spacing: 5px;
+}
+
+/* Estilos aplicados quando a largura da tela é igual ou inferior a 991 pixels */
+@media (max-width: 991px) {
+  #sobre, #curiosidades, #contato{
+    padding: 20px;
+  }
+}

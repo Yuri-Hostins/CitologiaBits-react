@@ -1,0 +1,439 @@
+/* Estilizando o cabeçalho fixo no topo da página */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s;
+  z-index: 99999999;
+}
+
+/* Estilizando a navegação fixa */
+.navegacao-fixa {
+  background: var(--branco);
+  padding: 10px 100px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.212);
+}
+
+/* Estilizando o logotipo da navegação fixa */
+.navegacao-fixa .logo {
+  color: var(--color-navbar--preto);
+}
+
+/* Estilizando os links da navegação fixa */
+.navegacao-fixa .navegacao li a {
+  color: var(--color-navbar--preto);
+}
+
+/* Estilizando o logotipo no cabeçalho */
+header .logo {
+  color: var(--branco);
+  font-weight: bold;
+  font-size: 2.5em;
+  text-decoration: none;
+}
+
+.logo-img {
+  display: none;
+}
+
+/* Estilizando o texto dentro da tag span no logotipo */
+header .logo span {
+  color: var(--color-link);
+}
+
+/* Estilizando a navegação no cabeçalho */
+header .navegacao {
+  position: relative;
+  /* Define a posição da navegação como relativa */
+  display: flex;
+  /* Define a navegação como um contêiner flexível */
+}
+
+/* Estilizando os itens da navegação no cabeçalho */
+header .navegacao li {
+  list-style: none;
+  /* Remove os marcadores de lista padrão nos itens da navegação */
+  margin-left: 30px;
+  /* Adiciona espaçamento à esquerda de 30 pixels para os itens da navegação */
+}
+
+/* Estilizando os links na navegação do cabeçalho */
+header .navegacao li a {
+  text-decoration: none;
+  /* Remove a decoração de texto (como sublinhado) nos links da navegação */
+  color: var(--branco);
+  fill: var(--branco);
+  /* Define a cor do texto dos links da navegação como branco */
+  font-weight: 300;
+  /* Define o peso da fonte dos links da navegação como 300 (mais leve) */
+  font-size: 1.5em;
+  /* Define o tamanho da fonte dos links da navegação como 1.5em (em relação ao tamanho da fonte padrão) */
+  transition: .5s;
+  cursor: pointer;
+  /* Define uma transição suave de 0,5 segundos para as propriedades que sofrerem alteração */
+}
+
+/* Estilizando o hover nos links da navegação do cabeçalho */
+header .navegacao li a:hover {
+  color: var(--color-link);
+  /* Define a cor do texto dos links da navegação quando o cursor do mouse passa por cima como rosa (var(--color-link)) */
+}
+
+.ativo {
+  border-bottom: 1px solid var(--color-link--secundarios);
+  transition: .2s;
+}
+
+/* Estilizando o título do conteúdo */
+.titulo-texto {
+  color: var(--color-navbar--preto);
+  /* Define a cor do texto do título como um tom de cinza escuro (var(--color-navbar--preto)) */
+  font-size: 2em;
+  /* Define o tamanho da fonte do título como 2em (em relação ao tamanho da fonte padrão) */
+  font-weight: 300;
+  /* Define o peso da fonte do título como 300 (mais leve) */
+}
+
+/* Estilizando o texto dentro da tag span no título */
+.titulo-texto span {
+  color: var(--color-link);
+  /* Define a cor do texto dentro da tag span do título como rosa (var(--color-link)) */
+  font-weight: 700;
+  /* Define o peso da fonte dentro da tag span do título como 700 (negrito) */
+  font-size: 1.5em;
+  /* Define o tamanho da fonte dentro da tag span do título como 1.5em (em relação ao tamanho da fonte padrão) */
+}
+
+/* Estilizando o elemento título */
+.titulo {
+  width: 100%;
+  /* Define a largura do elemento título como 100% */
+  display: flex;
+  /* Define o elemento título como um contêiner flexível */
+  justify-content: center;
+  /* Centraliza o conteúdo horizontalmente dentro do elemento título */
+  align-items: center;
+  /* Centraliza o conteúdo verticalmente dentro do elemento título */
+  flex-direction: column;
+  /* Define a direção do fluxo de itens dentro do elemento título como coluna */
+  margin-top: 2.45rem;
+}
+
+
+.menuMobile {
+  display: none;
+}
+
+
+@media screen and (max-width: 350px) {
+  header .logo {
+    color: var(--branco);
+    font-weight: bold;
+    font-size: 2em;
+    text-decoration: none;
+  }
+}
+
+/* Estilizando a navegação fixa e o cabeçalho em telas com largura máxima de 991 pixels (media query) */
+@media screen and (max-width: 1048px) {
+
+  .menuMobile {
+    display: block;
+  }
+
+  header,
+  header .navegacao-fixa {
+    padding: 10px 20px;
+    /* Reduz o espaçamento interno do cabeçalho e da navegação fixa para 10 pixels acima/abaixo e 20 pixels à direita/esquerda */
+  }
+
+  header .navegacao {
+    display: none;
+    /* Oculta a navegação */
+  }
+
+  .svg-hamburguer {
+    height: 80px;
+    position: absolute;
+    width: 80px;
+    cursor: pointer;
+  }
+
+  .placas {
+    display: flex;
+    flex-wrap: wrap;
+    max-height: 160px;
+    width: 640px;
+  }
+
+  @media (max-width: 640px) {
+    .placas {
+      width: 320px;
+    }
+  }
+
+  .placa {
+    height: 80px;
+    width: 80px;
+  }
+
+  .x {
+    transform: scale(0);
+    transition: transform 400ms;
+  }
+
+  .linha {
+    fill: none;
+    stroke: var(--branco);
+    stroke-width: 6px;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    transform-origin: 50%;
+    transition: stroke-dasharray 500ms 200ms, stroke-dashoffset 500ms 200ms, transform 500ms 200ms;
+  }
+
+  .x .linha {
+    stroke-width: 5.5px;
+  }
+
+  .ativo-menu .x {
+    transform: scale(1);
+    transition: transform 400ms 350ms;
+  }
+
+  .placa8 .linha {
+    transition: stroke-dasharray 400ms 100ms, stroke-dashoffset 400ms 100ms, transform 400ms 100ms;
+  }
+
+  .placa8 .linha1 {
+    stroke-dasharray: 21 201;
+  }
+
+  .placa8 .linha2 {
+    stroke-dasharray: 21 201;
+    transition-delay: 20ms;
+  }
+
+  .placa8 .linha3 {
+    stroke-dasharray: 21 201;
+    transition-delay: 40ms;
+  }
+
+  .placa8 .linha4 {
+    stroke-dasharray: 21 201;
+    transition-delay: 60ms;
+  }
+
+  .placa8 .linha5 {
+    stroke-dasharray: 21 201;
+    transition-delay: 80ms;
+  }
+
+  .placa8 .linha6 {
+    stroke-dasharray: 21 201;
+    transition-delay: 100ms;
+  }
+
+  .placa8 .x {
+    transition: transform 400ms 50ms;
+  }
+
+  .ativo-menu.placa8 .linha {
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms, transform 400ms;
+  }
+
+  .ativo-menu.placa8 .linha1 {
+    stroke-dasharray: 5 201;
+    stroke-dashoffset: -158px;
+  }
+
+  .ativo-menu.placa8 .linha2 {
+    stroke-dasharray: 5 201;
+    stroke-dashoffset: -158px;
+    transition-delay: 20ms;
+  }
+
+  .ativo-menu.placa8 .linha3 {
+    stroke-dasharray: 5 201;
+    stroke-dashoffset: -158px;
+    transition-delay: 40ms;
+  }
+
+  .ativo-menu.placa8 .linha4 {
+    stroke-dasharray: 5 201;
+    stroke-dashoffset: -158px;
+    transition-delay: 60ms;
+  }
+
+  .ativo-menu.placa8 .linha5 {
+    stroke-dasharray: 5 201;
+    stroke-dashoffset: -158px;
+    transition-delay: 80ms;
+  }
+
+  .ativo-menu.placa8 .linha6 {
+    stroke-dasharray: 5 201;
+    stroke-dashoffset: -158px;
+    transition-delay: 100ms;
+  }
+
+  .ativo-menu.placa8 .x {
+    transition: transform 400ms 50ms;
+  }
+
+  /* .navegacao-fixa .menuMobile{
+    filter: invert(1);
+  } */
+
+  .cor-alterada {
+    background-color: #000;
+  }
+
+  .titulo-texto {
+    font-size: 1.8em;
+    /* Reduz o tamanho da fonte do título quando a largura da tela é igual ou inferior a 991 pixels */
+    text-align: center;
+    /* Centraliza o texto do título horizontalmente quando a largura da tela é igual ou inferior a 991 pixels */
+  }
+
+  .navegacao-fixa {
+    padding: 10px 30px;
+    /* Adiciona um espaçamento interno reduzido para a navegação fixa quando a largura da tela é igual ou inferior a 991 pixels */
+  }
+
+  /* Estilos para a barra de navegação */
+  .navbar {
+    @media screen and (max-width: 1050px) {
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 75%;
+      height: 100%;
+      z-index: 10;
+      opacity: 0;
+      overflow-y: auto;
+      visibility: hidden;
+      box-shadow: var(--shadow-medium);
+      background-color: var(--color-white-100);
+      transition: all 0.5s ease;
+    }
+
+    &.active {
+      display: flex;
+      align-items: center;
+      left: 0rem;
+      opacity: 1;
+      visibility: visible;
+      background-color: var(--branco);
+    }
+  }
+
+  /* Estilos para um item de menu */
+  .menu-item {
+    position: relative;
+    display: inline-block;
+    margin-left: 1.5rem;
+  }
+
+  /* Estilos para o link do menu */
+  .menu-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 0.25rem;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: inherit;
+    cursor: pointer;
+    color: var(--color-black-500);
+    transition: all 0.3s ease-in-out;
+  }
+
+  /* Estilos para o ícone bx dentro do link do menu */
+  .menu-link>i.bx {
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: inherit;
+  }
+
+  .menu-link:hover,
+  .menu-link:focus {
+    outline: none;
+    color: var(--color-link);
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .navbar {
+      width: 55%;
+      height: 100%;
+      padding: 1rem 0;
+    }
+
+    .menu-item {
+      display: block;
+      margin: 0 auto;
+    }
+
+    .menu-link {
+      justify-content: space-between;
+      padding: 1.5rem 1.25rem;
+    }
+
+    /* Estilos para o overlay */
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 9;
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.35s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    @media only screen and (max-width: 1050px) {
+      .overlay.active {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+
+  }
+}
+
+@media screen and (min-width: 1350px) {
+  .logo-img {
+    display: block;
+    max-width: 85px;
+  }
+
+  .navegacao-fixa .logo-img {
+    filter: invert(1);
+  }
+
+
+  .logo-container {
+    animation: spin 5s linear infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+}

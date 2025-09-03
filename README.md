@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+# CitologiaBits - Site de Estudos sobre Citologia
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+> Status do projeto: Finalizado
 
-## Available Scripts
+CitologiaBits é o meu primeiro projeto de site educacional desenvolvido para facilitar os estudos sobre citologia, o estudo da célula. Neste projeto, eu não tinha muito conhecimento sobre as tecnologias envolvidas, mas me esforcei para criar algo útil e informativo.
 
-In the project directory, you can run:
+![CitologiaBits Screenshot](https://github.com/Yuri-Hostins/Alguma-Coisa/blob/main/imagens/CitologiaBits.png)
 
-### `npm start`
+## Instalação e Execução
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Clone o repositório para o seu computador usando o comando: `git clone https://github.com/Yuri-Hostins/Citologia-Bits.git`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+2. Navegue até o diretório do projeto:
 
-### `npm test`
+3. Abra o arquivo `index.html` no seu navegador para acessar o site.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Funcionalidades
 
-### `npm run build`
+- A página inicial exibe um banner convidativo e um botão para acessar o conteúdo do site.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- A seção "Curiosidades" apresenta 5 curiosidades interessantes sobre células.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- A seção "Todos os Conteúdos do site" contém links para várias páginas do site com informações detalhadas sobre citoplasma, organelas, ribossomos e muito mais.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- A seção "Contatos" oferece links para entrar em contato comigo.
 
-### `npm run eject`
+## Sobre o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Este projeto foi criado com muito esforço, mesmo sem ter muito conhecimento das tecnologias utilizadas. Foi uma oportunidade para aprender e praticar minhas habilidades em desenvolvimento web. Agradeço por visitar o CitologiaBits e espero que ele possa ter sido útil em seus estudos sobre citologia.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Atualização: Novo Site**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Agora, o CitologiaBits possui um novo site com mais recursos e informações atualizadas. Se desejar, você pode conferir o novo site no [Citologia-Bits--Novo](https://github.com/Yuri-Hostins/Citologia-Bits--Novo) e aproveitar ainda mais conteúdo sobre citologia!
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contato
 
-## Learn More
+Se tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Nome: [ Yuri Hostins Raimundo ]
+- Email: [ YuriVn21@outlook.com ]
+- Instagram: [ https://instagram.com/dev._.yuri ]
